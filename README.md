@@ -1,12 +1,14 @@
 # COREFLEX corporate website — A
 
-Private source repository for the COREFLEX corporate website.
+Public source repository for the COREFLEX corporate website.
 
-Production domain: https://new.crflx.com
+Live website: https://coremoca.github.io/coreflex-homepage/
+
+Planned custom domain: https://new.crflx.com (DNS connection pending).
 
 Static HTML, CSS and JavaScript. No build step or database required.
-Publish the repository root with GitHub Pages. All runtime assets are local.
+GitHub Pages publishes the main branch root. All runtime assets are local.
 
-Three.js license: THIRD_PARTY_LICENSE.txt
+Third-party code: Three.js. Its MIT license applies to the Three.js files; see THIRD_PARTY_LICENSE.txt.
 
-Source access is limited to the owner and invited collaborators. Website access is public.
+Repository visibility is public. Changes are limited to the owner and authorized collaborators.

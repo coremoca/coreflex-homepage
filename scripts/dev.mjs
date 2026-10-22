@@ -82,8 +82,8 @@ const server = http.createServer(async (req, res) => {
     res.end("파일을 찾을 수 없습니다.");
   }
 });
-server.listen(Number(process.env.PORT || 4175), "127.0.0.1", () =>
-  console.log(`로컬 미리보기: http://localhost:${process.env.PORT || 4175}/`),
+server.listen(Number(process.env.PORT || 4174), "127.0.0.1", () =>
+  console.log(`로컬 미리보기: http://localhost:${process.env.PORT || 4174}/`),
 );
 let timer,
   running = false,
@@ -116,3 +116,4 @@ process.on("SIGINT", () => {
   clients.forEach((res) => res.end());
   server.close(() => process.exit(0));
 });
+

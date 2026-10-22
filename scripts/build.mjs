@@ -233,12 +233,6 @@ export async function buildSite() {
       `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>페이지 이동</title><meta http-equiv="refresh" content="0;url=${newName}"><script>location.replace(${JSON.stringify(newName)}+location.search+location.hash)</script></head><body><a href="${newName}">새 페이지로 이동</a></body></html>`,
     );
   await fs.writeFile(path.join(output, ".nojekyll"), "");
-  // 이전 미리보기 이동 파일을 캐시한 브라우저도 공개 사이트 루트로 복구합니다.
-  await fs.mkdir(path.join(output, "dist"), { recursive: true });
-  await fs.writeFile(
-    path.join(output, "dist", "index.html"),
-    `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>코어플렉스</title><meta http-equiv="refresh" content="0;url=/index.html?site=20261022"><script>location.replace('/index.html?site=20261022'+location.hash)</script></head><body><a href="/index.html?site=20261022">코어플렉스 홈페이지</a></body></html>`,
-  );
   try {
     await fs.copyFile(path.join(root, "CNAME"), path.join(output, "CNAME"));
   } catch {}

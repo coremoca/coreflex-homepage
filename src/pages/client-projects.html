@@ -1,0 +1,36 @@
+<!-- 브라우저 제목: 회사별 납품실적 -->
+<!-- client-projects.html 화면 본문입니다. 공통 헤더·푸터는 src/components에서 수정합니다. -->
+<main id="main">
+  <!-- 구역: page-cover / 문구와 이미지는 이 구역 안에서 수정합니다. -->
+  <section class="page-cover">
+    <div class="overline">TRACK RECORD / BY CLIENT</div>
+    <div class="cover-line">
+      <h1>
+        같은 금융,
+        <br />
+        <em> 서로 다른 해답. </em>
+      </h1>
+      <p>국내 &amp; 해외 주요납품실적</p>
+    </div>
+    {{CLIENT_METRICS}}
+  </section>
+  <!-- 구역: business-browser / 문구와 이미지는 이 구역 안에서 수정합니다. -->
+  <section class="business-browser">
+    <div class="browser-bar">
+      {{CLIENT_FILTERS}}
+      <label>
+        고객사 찾기
+        <input
+          aria-label="고객사 찾기"
+          id="company-search"
+          placeholder="회사명을 입력하세요"
+          type="search"
+        />
+      </label>
+    </div>
+    <div class="company-records">
+      <!-- 회사별 실적 추가: src/data/client-projects.json의 해당 고객사 projects에 한 줄을 추가합니다. -->{{CLIENT_PROJECTS}}
+    </div>
+    <p class="search-empty" hidden="">일치하는 고객사가 없습니다.</p>
+  </section>
+</main>

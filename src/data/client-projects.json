@@ -1,0 +1,604 @@
+{
+  "description": "회사별 실적입니다. name/nameEn은 고객사 이름, projects의 ko/en은 한·영 문구입니다. 새 실적은 projects에 ko/en 객체 하나를 추가합니다.",
+  "items": [
+    {
+      "name": "SK증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "통합증거금 서비스 기술지원 (2025)",
+          "en": "Technical support for integrated margin services (2025)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "외화원장시스템 구축 (2021)",
+          "en": "Foreign-currency ledger system (2021)"
+        },
+        {
+          "ko": "기관 외화REPO시스템 (2019)",
+          "en": "Institutional foreign-currency repo system (2019)"
+        },
+        {
+          "ko": "외화RP시스템 (2017)",
+          "en": "Foreign-currency repo system (2017)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2016)",
+          "en": "Overseas equities system (2016)"
+        },
+        {
+          "ko": "외화채권시스템 구축",
+          "en": "Foreign-currency bond system"
+        },
+        {
+          "ko": "차세대시스템(계정계) 구축 (2009)",
+          "en": "Next-generation core accounting system (2009)"
+        }
+      ],
+      "nameEn": "SK Securities"
+    },
+    {
+      "name": "현대차증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "차세대시스템 구축 - 국내주식/해외주식 매매 (2026)",
+          "en": "Next-generation domestic and overseas equity trading system (2026)"
+        },
+        {
+          "ko": "외화원장시스템 구축 (2021)",
+          "en": "Foreign-currency ledger system (2021)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2020)",
+          "en": "Overseas equities system (2020)"
+        }
+      ],
+      "nameEn": "Hyundai Motor Securities"
+    },
+    {
+      "name": "한화투자증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "통합증거금 서비스 설계 (2023)",
+          "en": "Integrated margin service design (2023)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "외화원장시스템 구축 (2020)",
+          "en": "Foreign-currency ledger system (2020)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2018)",
+          "en": "Overseas equities system (2018)"
+        },
+        {
+          "ko": "고속주문시스템 구축 (2012)",
+          "en": "High-speed order system (2012)"
+        }
+      ],
+      "nameEn": "Hanwha Investment & Securities"
+    },
+    {
+      "name": "토스증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식 참조모델 공급 (2020)",
+          "en": "Overseas equities reference model (2020)"
+        }
+      ],
+      "nameEn": "Toss Securities"
+    },
+    {
+      "name": "WB홀딩스",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "암호화폐거래소 시스템 구축 (2019)",
+          "en": "Cryptocurrency exchange system (2019)"
+        }
+      ],
+      "nameEn": "WB Holdings"
+    },
+    {
+      "name": "한국가상화폐거래소",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "청산결제시스템 구축 (2018)",
+          "en": "Clearing and settlement system (2018)"
+        },
+        {
+          "ko": "암호화폐통합거래소 구축 (2017)",
+          "en": "Integrated cryptocurrency exchange (2017)"
+        }
+      ],
+      "nameEn": "Korea Cryptocurrency Exchange"
+    },
+    {
+      "name": "미래에셋증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외선물옵션 매매시스템 고도화 & 주문원장 개발 (2017)",
+          "en": "Overseas futures and options trading enhancement and order ledger development (2017)"
+        },
+        {
+          "ko": "차세대시스템(해외파생·채권) 구축",
+          "en": "Next-generation overseas derivatives and bond systems"
+        }
+      ],
+      "nameEn": "Mirae Asset Securities"
+    },
+    {
+      "name": "유진투자증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "리테일 대여풀 주식대여 서비스 구축 (2026)",
+          "en": "Retail pool securities lending service (2026)"
+        },
+        {
+          "ko": "해외주식 담보대출 서비스 개발 (2025)",
+          "en": "Overseas equity-backed lending service (2025)"
+        },
+        {
+          "ko": "외화RP시스템 (2023)",
+          "en": "Foreign-currency repo system (2023)"
+        },
+        {
+          "ko": "통합증거금 서비스 구축 (2023)",
+          "en": "Integrated margin service (2023)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "해외채권상품운용&리테일판매시스템 (2017)",
+          "en": "Foreign bond product management and retail sales system (2017)"
+        }
+      ],
+      "nameEn": "Eugene Investment & Securities"
+    },
+    {
+      "name": "신영증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식시스템 구축 (2021)",
+          "en": "Overseas equities system (2021)"
+        }
+      ],
+      "nameEn": "Shinyoung Securities"
+    },
+    {
+      "name": "LS증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식시스템 고도화 (2023)",
+          "en": "Overseas equities system enhancement (2023)"
+        }
+      ],
+      "nameEn": "LS Securities"
+    },
+    {
+      "name": "한국증권금융",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식의 대기관여신 담보취급 개발 (2025)",
+          "en": "Overseas equity collateral processing for institutional lending (2025)"
+        }
+      ],
+      "nameEn": "Korea Securities Finance"
+    },
+    {
+      "name": "신한투자증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식 CFD시스템 구축 (2022)",
+          "en": "Overseas equity CFD system (2022)"
+        },
+        {
+          "ko": "해외주식 원장시스템 고도화 (2020)",
+          "en": "Overseas equity ledger enhancement (2020)"
+        },
+        {
+          "ko": "해외파생 원장시스템 고도화 (2020)",
+          "en": "Overseas derivatives ledger enhancement (2020)"
+        },
+        {
+          "ko": "해외파생 원장시스템 재구축 (2019)",
+          "en": "Overseas derivatives ledger redevelopment (2019)"
+        },
+        {
+          "ko": "종합수익관리 시스템 (2016)",
+          "en": "Comprehensive profitability management system (2016)"
+        },
+        {
+          "ko": "DW이관 및 정보계 통합 구축 (2014)",
+          "en": "Data warehouse migration and management information integration (2014)"
+        },
+        {
+          "ko": "대행승인시스템 (2014)",
+          "en": "Delegated approval system (2014)"
+        }
+      ],
+      "nameEn": "Shinhan Investment & Securities"
+    },
+    {
+      "name": "메리츠증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식 상주개발 (2025)",
+          "en": "On-site overseas equities development (2025)"
+        },
+        {
+          "ko": "통합증거금 서비스 설계 (2025)",
+          "en": "Integrated margin service design (2025)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "해외주식 CFD시스템 구축 (2022)",
+          "en": "Overseas equity CFD system (2022)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2018)",
+          "en": "Overseas equities system (2018)"
+        },
+        {
+          "ko": "신연금저축시스템 구축 (2016)",
+          "en": "New pension savings system (2016)"
+        }
+      ],
+      "nameEn": "Meritz Securities"
+    },
+    {
+      "name": "하나증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식 실시간 소수점매매 구축 (2026)",
+          "en": "Real-time overseas equity fractional share trading (2026)"
+        },
+        {
+          "ko": "대체거래소 대응 개발 (2024)",
+          "en": "Alternative trading system connectivity (2024)"
+        },
+        {
+          "ko": "통합증거금 서비스 구축 (2024)",
+          "en": "Integrated margin service (2024)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "차세대시스템(매매) 구축 (2016)",
+          "en": "Next-generation trading system (2016)"
+        },
+        {
+          "ko": "우리사주 관리 시스템 (2014)",
+          "en": "Employee stock ownership management system (2014)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2012)",
+          "en": "Overseas equities system (2012)"
+        },
+        {
+          "ko": "해외채권시스템 구축 (2012)",
+          "en": "Foreign bond system (2012)"
+        }
+      ],
+      "nameEn": "Hana Securities"
+    },
+    {
+      "name": "교보증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "통합증거금 서비스 설계 (2025)",
+          "en": "Integrated margin service design (2025)"
+        },
+        {
+          "ko": "해외주식 원장시스템 개발 (2016)",
+          "en": "Overseas equity ledger development (2016)"
+        }
+      ],
+      "nameEn": "Kyobo Securities"
+    },
+    {
+      "name": "삼성증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "SAAT Retail시스템 구축 (2017)",
+          "en": "SAAT retail system (2017)"
+        },
+        {
+          "ko": "메인프레임 다운사이징 (2016)",
+          "en": "Mainframe downsizing (2016)"
+        },
+        {
+          "ko": "주문시스템 Active-Active (SAAT) 구축 (2015)",
+          "en": "Active-active SAAT order system (2015)"
+        }
+      ],
+      "nameEn": "Samsung Securities"
+    },
+    {
+      "name": "대우증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외선물 VIP고객유치 특화기능 개발(2015)",
+          "en": "Specialized features for overseas futures VIP clients (2015)"
+        },
+        {
+          "ko": "해외선물 온/오프라인 시스템 고도화 (2015)",
+          "en": "Overseas futures online and offline system enhancement (2015)"
+        },
+        {
+          "ko": "소액 담보융자 서비스 시스템",
+          "en": "Small-value secured lending service system"
+        },
+        {
+          "ko": "외화 RP시스템 구축",
+          "en": "Foreign-currency repo system implementation"
+        }
+      ],
+      "nameEn": "Daewoo Securities"
+    },
+    {
+      "name": "KB증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식시스템 구축 (2015)",
+          "en": "Overseas equities system (2015)"
+        }
+      ],
+      "nameEn": "KB Securities"
+    },
+    {
+      "name": "DB증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식시스템 고도화 (2026)",
+          "en": "Overseas equities system enhancement (2026)"
+        },
+        {
+          "ko": "해외주식 소수점매매 구축 (2022)",
+          "en": "Overseas equity fractional share trading platform (2022)"
+        },
+        {
+          "ko": "해외주식시스템 구축 (2021)",
+          "en": "Overseas equities system (2021)"
+        }
+      ],
+      "nameEn": "DB Securities"
+    },
+    {
+      "name": "우리투자증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "합병후 시스템 통합 (2024)",
+          "en": "Post-merger system integration (2024)"
+        }
+      ],
+      "nameEn": "Woori Investment & Securities"
+    },
+    {
+      "name": "넥스트증권",
+      "region": "domestic",
+      "projects": [
+        {
+          "ko": "해외주식원장 및 FIX Gateway 구축 (2026)",
+          "en": "Overseas equity ledger and FIX gateway (2026)"
+        },
+        {
+          "ko": "미국주식옵션원장 구축 (2027)",
+          "en": "US equity options ledger (2027)"
+        }
+      ],
+      "nameEn": "Next Securities"
+    },
+    {
+      "name": "NTT DATA",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "도쿄공업품거래소(TOCOM)회원시스템 프로토타이핑",
+          "en": "TOCOM member system prototype"
+        }
+      ],
+      "nameEn": "NTT DATA"
+    },
+    {
+      "name": "일본오사카증권거래소",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "차기파생상품 매매시스템 시험툴",
+          "en": "Next-generation derivatives trading system test tools"
+        }
+      ],
+      "nameEn": "Osaka Securities Exchange, Japan"
+    },
+    {
+      "name": "일본쥬빌리랩",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "SBI증권 MTS 프로토타이핑",
+          "en": "SBI Securities mobile trading system prototype"
+        },
+        {
+          "ko": "증권가상매매시스템",
+          "en": "Securities trading simulation system"
+        }
+      ],
+      "nameEn": "Jubilee Lab, Japan"
+    },
+    {
+      "name": "일본오카상증권",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "차기 신 넷 트레이드 시스템(WTS)",
+          "en": "Next-generation web trading system"
+        }
+      ],
+      "nameEn": "Okasan Securities, Japan"
+    },
+    {
+      "name": "일본유니콤",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "상품선물HTS",
+          "en": "Commodity futures home trading system"
+        }
+      ],
+      "nameEn": "Unicom, Japan"
+    },
+    {
+      "name": "일본CSK SS",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "넷 투신 시스템",
+          "en": "Online investment trust system"
+        }
+      ],
+      "nameEn": "CSK SS, Japan"
+    },
+    {
+      "name": "에스파이온",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "시마다지역 의료연계시스템(SAMIS) 구축",
+          "en": "Shimada regional medical information system (SAMIS)"
+        }
+      ],
+      "nameEn": "Espion"
+    },
+    {
+      "name": "일본트레이더불",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "모바일앱 구축",
+          "en": "Mobile application implementation"
+        }
+      ],
+      "nameEn": "Traderbull, Japan"
+    },
+    {
+      "name": "일본이츠카병원",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "개발 프레임워크 제공",
+          "en": "Development framework delivery"
+        }
+      ],
+      "nameEn": "Itsuka Hospital, Japan"
+    },
+    {
+      "name": "일본센추리 증권",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "상품선물회사 HTS",
+          "en": "Home trading system for a commodity futures firm"
+        }
+      ],
+      "nameEn": "Century Securities, Japan"
+    },
+    {
+      "name": "베트남Pinetree증권",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "베트남증권 원장시스템 구축",
+          "en": "Vietnam securities ledger system"
+        }
+      ],
+      "nameEn": "Pinetree Securities, Vietnam"
+    },
+    {
+      "name": "우즈벡국유자산위원회",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "증권사원장관리시스템 개발",
+          "en": "Securities firm ledger management system development"
+        }
+      ],
+      "nameEn": "State Assets Authority, Uzbekistan"
+    },
+    {
+      "name": "캄보디아증권거래소",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "증권사원장관리 시스템",
+          "en": "Securities firm ledger management system"
+        }
+      ],
+      "nameEn": "Cambodia Securities Exchange"
+    },
+    {
+      "name": "라오스증권거래소",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "증권사원장관리 시스템",
+          "en": "Securities firm ledger management system"
+        }
+      ],
+      "nameEn": "Lao Securities Exchange"
+    },
+    {
+      "name": "아제르바이잔증권위원회",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "증권사원장관리시스템 개발",
+          "en": "Securities firm ledger management system development"
+        }
+      ],
+      "nameEn": "Securities Regulator, Azerbaijan"
+    },
+    {
+      "name": "인도네시아 코린도증권",
+      "region": "global",
+      "projects": [
+        {
+          "ko": "증권시스템 (계좌출납)",
+          "en": "Securities account and cash operations system"
+        }
+      ],
+      "nameEn": "Korindo Securities, Indonesia"
+    }
+  ]
+}

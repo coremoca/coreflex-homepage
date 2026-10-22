@@ -1,0 +1,407 @@
+{
+  "description": "연도별 실적입니다. projects에 ko/en 문구를 함께 추가하면 한국어·영어 페이지와 메인 최근 실적이 같이 바뀝니다.",
+  "items": [
+    {
+      "year": 2026,
+      "projects": [
+        {
+          "ko": "유진투자증권 리테일 대여풀 주식대여 서비스 구축",
+          "en": "Eugene Investment & Securities: retail pool securities lending service"
+        },
+        {
+          "ko": "현대차증권 차세대시스템 - 국내/해외주식 매매, 결제, 통합증거금",
+          "en": "Hyundai Motor Securities: next-generation domestic and overseas equities trading, settlement and integrated margin"
+        },
+        {
+          "ko": "넥스트증권 해외주식원장 및 FIX Gateway 구축",
+          "en": "Next Securities: overseas equity ledger and FIX gateway"
+        },
+        {
+          "ko": "DB증권 해외주식시스템 고도화",
+          "en": "DB Securities: overseas equities system enhancement"
+        },
+        {
+          "ko": "하나증권 해외주식 실시간 소수점매매 구축",
+          "en": "Hana Securities: real-time overseas equity fractional share trading"
+        },
+        {
+          "ko": "넥스트증권 미국주식옵션원장 구축",
+          "en": "Next Securities: US equity options ledger"
+        }
+      ]
+    },
+    {
+      "year": 2025,
+      "projects": [
+        {
+          "ko": "유진투자증권 해외주식 담보대출 서비스 구축",
+          "en": "Eugene Investment & Securities: overseas equity-backed lending service"
+        },
+        {
+          "ko": "한국증권금융 해외주식의 대기관여신 담보취급 개발",
+          "en": "Korea Securities Finance: overseas equity collateral processing for institutional lending"
+        },
+        {
+          "ko": "메리츠증권 해외주식 상주개발",
+          "en": "Meritz Securities: on-site overseas equities development"
+        },
+        {
+          "ko": "메리츠증권 통합증거금 서비스 설계",
+          "en": "Meritz Securities: integrated margin service design"
+        },
+        {
+          "ko": "교보증권 통합증거금 서비스 설계",
+          "en": "Kyobo Securities: integrated margin service design"
+        },
+        {
+          "ko": "SK증권 통합증거금 서비스 설계",
+          "en": "SK Securities: integrated margin service design"
+        }
+      ]
+    },
+    {
+      "year": 2024,
+      "projects": [
+        {
+          "ko": "하나증권 통합증거금 서비스 구축",
+          "en": "Hana Securities: integrated margin service"
+        },
+        {
+          "ko": "하나증권 대체거래소 대응 개발",
+          "en": "Hana Securities: alternative trading system connectivity"
+        },
+        {
+          "ko": "우리투자증권 시스템 통합",
+          "en": "Woori Investment & Securities: system integration"
+        },
+        {
+          "ko": "베트남 증권원장 시스템 구축",
+          "en": "Securities ledger system in Vietnam"
+        }
+      ]
+    },
+    {
+      "year": 2023,
+      "projects": [
+        {
+          "ko": "이베스트투자증권 해외주식시스템 고도화",
+          "en": "eBEST Investment & Securities: overseas equities system enhancement"
+        },
+        {
+          "ko": "유진투자증권 통합증거금 서비스 구축",
+          "en": "Eugene Investment & Securities: integrated margin service"
+        },
+        {
+          "ko": "유진투자증권 외화RP 구축",
+          "en": "Eugene Investment & Securities: foreign-currency repo system"
+        },
+        {
+          "ko": "한화투자증권 통합증거금 서비스 설계",
+          "en": "Hanwha Investment & Securities: integrated margin service design"
+        }
+      ]
+    },
+    {
+      "year": 2022,
+      "projects": [
+        {
+          "ko": "메리츠증권 해외주식 CFD시스템 구축",
+          "en": "Meritz Securities: overseas equity CFD system"
+        },
+        {
+          "ko": "신한금융투자 해외주식 CFD시스템 구축",
+          "en": "Shinhan Investment: overseas equity CFD system"
+        },
+        {
+          "ko": "한화투자증권 해외주식 소수점매매 구축",
+          "en": "Hanwha Investment & Securities: overseas equity fractional share trading"
+        },
+        {
+          "ko": "하나금융투자 해외주식 소수점매매 구축",
+          "en": "Hana Financial Investment: overseas equity fractional share trading"
+        },
+        {
+          "ko": "메리츠증권 해외주식 소수점매매 구축",
+          "en": "Meritz Securities: overseas equity fractional share trading"
+        },
+        {
+          "ko": "DB금융투자 해외주식 소수점매매 구축",
+          "en": "DB Financial Investment: overseas equity fractional share trading"
+        },
+        {
+          "ko": "SK증권 해외주식 소수점매매 구축",
+          "en": "SK Securities: overseas equity fractional share trading"
+        },
+        {
+          "ko": "유진투자증권 해외주식 소수점매매 구축",
+          "en": "Eugene Investment & Securities: overseas equity fractional share trading"
+        }
+      ]
+    },
+    {
+      "year": 2021,
+      "projects": [
+        {
+          "ko": "DB금융투자 해외주식시스템 구축",
+          "en": "DB Financial Investment: overseas equities system"
+        },
+        {
+          "ko": "신영증권 해외주식시스템 구축",
+          "en": "Shinyoung Securities: overseas equities system"
+        },
+        {
+          "ko": "SK증권 외화원장시스템 구축",
+          "en": "SK Securities: foreign-currency ledger system"
+        },
+        {
+          "ko": "현대차증권 외화원장시스템 구축",
+          "en": "Hyundai Motor Securities: foreign-currency ledger system"
+        }
+      ]
+    },
+    {
+      "year": 2020,
+      "projects": [
+        {
+          "ko": "베트남 Pinetree 증권 원장 시스템 구축",
+          "en": "Pinetree Securities, Vietnam: securities ledger system"
+        },
+        {
+          "ko": "현대차증권 해외주식시스템 구축",
+          "en": "Hyundai Motor Securities: overseas equities system"
+        },
+        {
+          "ko": "신한금융투자 해외주식, 해외파생시스템 고도화",
+          "en": "Shinhan Investment: overseas equities and derivatives system enhancement"
+        },
+        {
+          "ko": "한화투자증권 외화원장시스템 구축",
+          "en": "Hanwha Investment & Securities: foreign-currency ledger system"
+        }
+      ]
+    },
+    {
+      "year": 2019,
+      "projects": [
+        {
+          "ko": "청년친화강소기업 선정",
+          "en": "Selected as a Youth-Friendly Small Giant Company"
+        },
+        {
+          "ko": "신한금융투자 해외파생시스템 구축",
+          "en": "Shinhan Investment: overseas derivatives system"
+        },
+        {
+          "ko": "참비트 암호화폐거래소 시스템 구축",
+          "en": "Charmbit: cryptocurrency exchange system"
+        }
+      ]
+    },
+    {
+      "year": 2018,
+      "projects": [
+        {
+          "ko": "메리츠증권 해외주식시스템 구축",
+          "en": "Meritz Securities: overseas equities system"
+        },
+        {
+          "ko": "한화투자증권 해외주식시스템 구축",
+          "en": "Hanwha Investment & Securities: overseas equities system"
+        },
+        {
+          "ko": "미래대우 차세대 해외파생시스템, 채권시스템 구축",
+          "en": "Mirae Asset Daewoo: next-generation overseas derivatives and bond systems"
+        },
+        {
+          "ko": "한국가상화폐거래소 매칭 및 원장시스템 구축",
+          "en": "Korea Cryptocurrency Exchange: matching and ledger systems"
+        }
+      ]
+    },
+    {
+      "year": 2017,
+      "projects": [
+        {
+          "ko": "삼성 SAAT 리테일시스템 구축",
+          "en": "Samsung: SAAT retail system"
+        },
+        {
+          "ko": "코스콤 자본시장 공동 오픈 API FIX 게이트웨이 구축",
+          "en": "KOSCOM: FIX gateway for capital market shared Open APIs"
+        },
+        {
+          "ko": "SK증권 외화RP 구축",
+          "en": "SK Securities: foreign-currency repo system"
+        },
+        {
+          "ko": "유진투자증권 해외채권시스템 구축",
+          "en": "Eugene Investment & Securities: foreign bond system"
+        },
+        {
+          "ko": "한국예탁결제원 전자증권제도 도입 컨설팅",
+          "en": "Korea Securities Depository: electronic securities adoption consulting"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "projects": [
+        {
+          "ko": "아제르바이잔 증권위원회 원장시스템 구축",
+          "en": "Azerbaijan securities regulator: securities ledger system"
+        },
+        {
+          "ko": "우즈벡 국유자산위원회 원장시스템 구축",
+          "en": "Uzbekistan state assets authority: securities ledger system"
+        },
+        {
+          "ko": "하나금융투자 차세대 매매시스템 구축",
+          "en": "Hana Financial Investment: next-generation trading system"
+        },
+        {
+          "ko": "교보증권 해외주식시스템 구축",
+          "en": "Kyobo Securities: overseas equities system"
+        },
+        {
+          "ko": "SK증권 해외주식시스템 구축",
+          "en": "SK Securities: overseas equities system"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "projects": [
+        {
+          "ko": "KB투자증권 해외주식 시스템 구축",
+          "en": "KB Investment & Securities: overseas equities system"
+        },
+        {
+          "ko": "삼성 SAAT 시스템 구축",
+          "en": "Samsung: SAAT system"
+        },
+        {
+          "ko": "대우증권 해외선물 고도화",
+          "en": "Daewoo Securities: overseas futures system enhancement"
+        }
+      ]
+    },
+    {
+      "year": 2014,
+      "projects": [
+        {
+          "ko": "신한금융투자 정보계 통합 구축",
+          "en": "Shinhan Investment: management information integration"
+        },
+        {
+          "ko": "SK증권 외화채권시스템 구축",
+          "en": "SK Securities: foreign-currency bond system"
+        },
+        {
+          "ko": "하나대투증권 우리사주관리시스템 구축",
+          "en": "Hana Daetoo Securities: employee stock ownership management system"
+        },
+        {
+          "ko": "하나대투증권 차세대 PI",
+          "en": "Hana Daetoo Securities: next-generation process innovation"
+        }
+      ]
+    },
+    {
+      "year": 2013,
+      "projects": [
+        {
+          "ko": "INNO-BIZ 기술혁신 중소기업 인증",
+          "en": "Certified as an INNO-BIZ technology-innovative SME"
+        },
+        {
+          "ko": "대우증권 전자단기사채시스템 구축",
+          "en": "Daewoo Securities: electronic short-term bond system"
+        },
+        {
+          "ko": "메리츠종금증권 전자단기사채시스템 구축",
+          "en": "Meritz Merchant Securities: electronic short-term bond system"
+        },
+        {
+          "ko": "현대증권 외화매도가능채권매매시스템 구축",
+          "en": "Hyundai Securities: foreign-currency available-for-sale bond trading system"
+        },
+        {
+          "ko": "한화투자증권 고속주문시스템 구축",
+          "en": "Hanwha Investment & Securities: high-speed order system"
+        }
+      ]
+    },
+    {
+      "year": 2012,
+      "projects": [
+        {
+          "ko": "캄보디아거래소 원장시스템 구축",
+          "en": "Cambodia Securities Exchange: securities ledger system"
+        },
+        {
+          "ko": "부국증권 차세대시스템 구축",
+          "en": "Bookook Securities: next-generation system"
+        },
+        {
+          "ko": "하나대투증권 해외주식시스템 구축",
+          "en": "Hana Daetoo Securities: overseas equities system"
+        },
+        {
+          "ko": "하나대투증권 외화채권시스템 구축",
+          "en": "Hana Daetoo Securities: foreign-currency bond system"
+        },
+        {
+          "ko": "한화증권-푸르덴셜투자증권 PMI",
+          "en": "Hanwha Securities and Prudential Investment & Securities: post-merger integration"
+        }
+      ]
+    },
+    {
+      "year": 2011,
+      "projects": [
+        {
+          "ko": "라오스거래소 원장시스템 구축",
+          "en": "Lao Securities Exchange: securities ledger system"
+        },
+        {
+          "ko": "대우증권 외화RP시스템 구축",
+          "en": "Daewoo Securities: foreign-currency repo system"
+        },
+        {
+          "ko": "신한금융투자 해외선물, FX마진 고도화",
+          "en": "Shinhan Investment: overseas futures and FX margin system enhancement"
+        }
+      ]
+    },
+    {
+      "year": 2010,
+      "projects": [
+        {
+          "ko": "벤처기업 인증",
+          "en": "Certified as a venture enterprise"
+        },
+        {
+          "ko": "한국산업기술진흥협회 기업부설 연구소 인증",
+          "en": "Corporate research institute recognized by the Korea Industrial Technology Association"
+        },
+        {
+          "ko": "오사카거래소 J-GATE 시험툴",
+          "en": "Osaka Securities Exchange: J-GATE test tools"
+        },
+        {
+          "ko": "토쿄공업품거래소 회원시스템 프로토타이핑",
+          "en": "Tokyo Commodity Exchange: member system prototype"
+        }
+      ]
+    },
+    {
+      "year": 2009,
+      "projects": [
+        {
+          "ko": "㈜ ICM에서 IT사업부문이 분리된 ㈜GNSk로부터 금융사업부문 양수 ㈜코어플렉스 설립",
+          "en": "Coreflex established through the acquisition of the financial business division from GNSk, which had been spun off from ICM's IT business"
+        }
+      ]
+    }
+  ]
+}

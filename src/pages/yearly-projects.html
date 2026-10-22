@@ -1,0 +1,27 @@
+<!-- 브라우저 제목: 연도별 실적 -->
+<!-- yearly-projects.html 화면 본문입니다. 공통 헤더·푸터는 src/components에서 수정합니다. -->
+<main id="main">
+  <!-- 구역: page-cover / 문구와 이미지는 이 구역 안에서 수정합니다. -->
+  <section class="page-cover">
+    <div class="overline">TRACK RECORD / BY YEAR</div>
+    <div class="cover-line">
+      <h1>
+        시간이 쌓이면,
+        <br />
+        <em> 실력이 됩니다. </em>
+      </h1>
+      <p>
+        {{YEAR_RANGE}}
+        <br />
+        연도별 실적과 연혁
+      </p>
+    </div>
+    {{HISTORY_CHART}}
+  </section>
+  <div class="timeline-layout">
+    <aside class="timeline-rail">{{YEAR_NAVIGATION}}</aside>
+    <div class="timeline-content">
+      <!-- 연도별 실적 추가: src/data/yearly-projects.json을 수정합니다. 여기는 자동 생성 자리입니다. -->{{YEARLY_PROJECTS}}
+    </div>
+  </div>
+</main>

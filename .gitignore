@@ -1,0 +1,4 @@
+# 수정은 src에서 합니다. dist는 자동 생성됩니다.
+dist/
+node_modules/
+*.log

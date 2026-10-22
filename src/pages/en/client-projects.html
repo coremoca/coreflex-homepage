@@ -1,0 +1,34 @@
+<!-- 브라우저 제목: Projects by client -->
+<!-- client-projects.html 화면 본문입니다. 공통 헤더·푸터는 src/components에서 수정합니다. -->
+<main id="main">
+  <!-- 구역: page-cover / 문구와 이미지는 이 구역 안에서 수정합니다. -->
+  <section class="page-cover">
+    <div class="overline">TRACK RECORD / BY CLIENT</div>
+    <div class="cover-line">
+      <h1>
+        One industry.<br />
+        <em>Distinct solutions.</em>
+      </h1>
+      <p>Selected projects for clients in Korea and around the world</p>
+    </div>
+    {{CLIENT_METRICS}}
+  </section>
+  <!-- 구역: business-browser / 문구와 이미지는 이 구역 안에서 수정합니다. -->
+  <section class="business-browser">
+    <div class="browser-bar">
+      {{CLIENT_FILTERS}}
+      <label
+        >Find a client<input
+          aria-label="Find a client"
+          id="company-search"
+          placeholder="Enter a client name"
+          type="search"
+        />
+      </label>
+    </div>
+    <div class="company-records">
+      <!-- 회사별 실적 추가: src/data/client-projects.json의 해당 고객사 projects에 한 줄을 추가합니다. -->{{CLIENT_PROJECTS}}
+    </div>
+    <p class="search-empty" hidden="">No matching clients found.</p>
+  </section>
+</main>

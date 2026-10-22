@@ -1,0 +1,245 @@
+{
+  "description": "고객사 로고: items에 이름, 지역, 이미지 경로와 원본 크기를 추가합니다. region은 domestic 또는 global입니다.",
+  "items": [
+    {
+      "name": "교보증권",
+      "region": "domestic",
+      "image": "assets/images/clients/kyobo.png",
+      "width": 510,
+      "height": 220,
+      "nameEn": "Kyobo Securities"
+    },
+    {
+      "name": "넥스트증권",
+      "region": "domestic",
+      "image": "assets/images/clients/next-securities.png",
+      "width": 177,
+      "height": 40,
+      "nameEn": "Next Securities"
+    },
+    {
+      "name": "DB증권",
+      "region": "domestic",
+      "image": "assets/images/clients/db-securities.png",
+      "width": 122,
+      "height": 131,
+      "nameEn": "DB Securities"
+    },
+    {
+      "name": "메리츠증권",
+      "region": "domestic",
+      "image": "assets/images/clients/meritz.jpg",
+      "width": 640,
+      "height": 324,
+      "nameEn": "Meritz Securities"
+    },
+    {
+      "name": "미래에셋증권",
+      "region": "domestic",
+      "image": "assets/images/clients/mirae-asset.png",
+      "width": 130,
+      "height": 46,
+      "nameEn": "Mirae Asset Securities"
+    },
+    {
+      "name": "부국증권",
+      "region": "domestic",
+      "image": "assets/images/clients/bookook.png",
+      "width": 207,
+      "height": 40,
+      "nameEn": "Bookook Securities"
+    },
+    {
+      "name": "삼성증권",
+      "region": "domestic",
+      "image": "assets/images/clients/samsung.png",
+      "width": 369,
+      "height": 136,
+      "nameEn": "Samsung Securities"
+    },
+    {
+      "name": "신한투자증권",
+      "region": "domestic",
+      "image": "assets/images/clients/shinhan.png",
+      "width": 180,
+      "height": 33,
+      "nameEn": "Shinhan Investment & Securities"
+    },
+    {
+      "name": "신영증권",
+      "region": "domestic",
+      "image": "assets/images/clients/shinyoung.png",
+      "width": 200,
+      "height": 46,
+      "nameEn": "Shinyoung Securities"
+    },
+    {
+      "name": "SK증권",
+      "region": "domestic",
+      "image": "assets/images/clients/sk-securities.jpg",
+      "width": 370,
+      "height": 240,
+      "nameEn": "SK Securities"
+    },
+    {
+      "name": "LS증권",
+      "region": "domestic",
+      "image": "assets/images/clients/ls-securities.png",
+      "width": 168,
+      "height": 65,
+      "nameEn": "LS Securities"
+    },
+    {
+      "name": "우리투자증권",
+      "region": "domestic",
+      "image": "assets/images/clients/woori.png",
+      "width": 340,
+      "height": 60,
+      "nameEn": "Woori Investment & Securities"
+    },
+    {
+      "name": "유진투자증권",
+      "region": "domestic",
+      "image": "assets/images/clients/eugene.jpg",
+      "width": 450,
+      "height": 112,
+      "nameEn": "Eugene Investment & Securities"
+    },
+    {
+      "name": "KB증권",
+      "region": "domestic",
+      "image": "assets/images/clients/kb-securities.jpg",
+      "width": 429,
+      "height": 117,
+      "nameEn": "KB Securities"
+    },
+    {
+      "name": "코빗",
+      "region": "domestic",
+      "image": "assets/images/clients/korbit.png",
+      "width": 300,
+      "height": 150,
+      "nameEn": "Korbit"
+    },
+    {
+      "name": "koscom",
+      "region": "domestic",
+      "image": "assets/images/clients/koscom.jpg",
+      "width": 503,
+      "height": 100,
+      "nameEn": "KOSCOM"
+    },
+    {
+      "name": "토스증권",
+      "region": "domestic",
+      "image": "assets/images/clients/toss-securities.svg",
+      "width": 782,
+      "height": 200,
+      "nameEn": "Toss Securities"
+    },
+    {
+      "name": "하나증권",
+      "region": "domestic",
+      "image": "assets/images/clients/hana.png",
+      "width": 160,
+      "height": 31,
+      "nameEn": "Hana Securities"
+    },
+    {
+      "name": "KRX",
+      "region": "domestic",
+      "image": "assets/images/clients/krx.png",
+      "width": 343,
+      "height": 240,
+      "nameEn": "Korea Exchange"
+    },
+    {
+      "name": "한국증권금융",
+      "region": "domestic",
+      "image": "assets/images/clients/korea-securities-finance.png",
+      "width": 143,
+      "height": 44,
+      "nameEn": "Korea Securities Finance"
+    },
+    {
+      "name": "한화증권",
+      "region": "domestic",
+      "image": "assets/images/clients/hanwha.jpg",
+      "width": 800,
+      "height": 274,
+      "nameEn": "Hanwha Investment & Securities"
+    },
+    {
+      "name": "현대차증권",
+      "region": "domestic",
+      "image": "assets/images/clients/hyundai-motor.png",
+      "width": 305,
+      "height": 165,
+      "nameEn": "Hyundai Motor Securities"
+    },
+    {
+      "name": "NTT Data",
+      "region": "global",
+      "image": "assets/images/clients/ntt-data.png",
+      "width": 378,
+      "height": 133,
+      "nameEn": "NTT DATA"
+    },
+    {
+      "name": "라오스거래소",
+      "region": "global",
+      "image": "assets/images/clients/lao-exchange.jpg",
+      "width": 343,
+      "height": 147,
+      "nameEn": "Lao Securities Exchange"
+    },
+    {
+      "name": "베트남 Pinetree증권",
+      "region": "global",
+      "image": "assets/images/clients/pinetree.png",
+      "width": 329,
+      "height": 153,
+      "nameEn": "Pinetree Securities"
+    },
+    {
+      "name": "아제르바이잔 증권위원회 (SCS)",
+      "region": "global",
+      "image": "assets/images/clients/azerbaijan-scs.jpg",
+      "width": 410,
+      "height": 129,
+      "nameEn": "Securities Regulator, Azerbaijan"
+    },
+    {
+      "name": "오사카거래소",
+      "region": "global",
+      "image": "assets/images/clients/japan-exchange.jpg",
+      "width": 225,
+      "height": 355,
+      "nameEn": "Japan Exchange"
+    },
+    {
+      "name": "우즈벡 국유자산위원회 (SCC)",
+      "region": "global",
+      "image": "assets/images/clients/uzbekistan-scc.png",
+      "width": 643,
+      "height": 643,
+      "nameEn": "State Assets Authority, Uzbekistan"
+    },
+    {
+      "name": "일본 오카산증권",
+      "region": "global",
+      "image": "assets/images/clients/okasan.png",
+      "width": 128,
+      "height": 160,
+      "nameEn": "Okasan Securities"
+    },
+    {
+      "name": "캄보디아거래소",
+      "region": "global",
+      "image": "assets/images/clients/cambodia-exchange.png",
+      "width": 820,
+      "height": 517,
+      "nameEn": "Cambodia Securities Exchange"
+    }
+  ]
+}

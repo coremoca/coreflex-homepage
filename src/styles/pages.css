@@ -1,0 +1,1263 @@
+/* 회사별·연도별 실적, 고객경험, 경쟁력, 채용·문의의 상세 배치입니다. */
+/* 실적 아카이브: 로고 이미지 대신 타이포그래피와 정보 위계로 구성합니다. */
+body[data-page="client-projects.html"] .page-cover,
+body[data-page="yearly-projects.html"] .page-cover {
+  background:
+    radial-gradient(ellipse at 95% 90%, #1d304c, transparent 60%), #080c12;
+}
+.record-metrics {
+  display: flex;
+  gap: 65px;
+  margin-top: 45px;
+  padding-top: 25px;
+  border-top: 1px solid #ffffff25;
+  position: relative;
+  z-index: 2;
+}
+.record-metrics strong {
+  font-size: clamp(36px, 4vw, 58px);
+  line-height: 1.2;
+  font-weight: 550;
+  letter-spacing: -2px;
+}
+.record-metrics strong > span {
+  font-size: 15px;
+  letter-spacing: 0;
+  font-weight: 500;
+  margin-left: 9px;
+  color: #a2b8d4;
+}
+.record-metrics p {
+  color: #9aadc7;
+  font-size: 14px;
+  margin: 10px 0 0;
+}
+.business-browser {
+  background: #0c121c;
+  color: #e7eef8;
+  padding-top: 42px;
+}
+.browser-bar {
+  border-color: #344055;
+  gap: 30px;
+  padding-bottom: 24px;
+}
+.record-filters {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+}
+.record-filters button {
+  border: 0;
+  background: none;
+  color: #7f92ac;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 12px 0;
+  position: relative;
+  white-space: nowrap;
+}
+.record-filters button span {
+  font-size: 12px;
+  letter-spacing: 0;
+  margin-left: 7px;
+  color: #6d819d;
+}
+.record-filters button.selected {
+  color: #eaf3ff;
+}
+.record-filters button:after {
+  content: "";
+  position: absolute;
+  bottom: -25px;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: #bbd4f5;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.25s;
+}
+.record-filters button.selected:after {
+  transform: scaleX(1);
+}
+.browser-bar label {
+  color: #8fa3bf;
+  font-size: 13px;
+}
+.browser-bar input {
+  color: #e3edfa;
+  border-color: #3b4d67;
+  font-size: 15px;
+}
+.browser-bar input::placeholder {
+  color: #627897;
+}
+.company-records {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 65px;
+}
+.company-record {
+  display: block;
+  padding: 38px 0 32px;
+  border-bottom: 1px solid #2c394d;
+  position: relative;
+  min-width: 0;
+}
+.company-record:nth-child(2n) {
+  padding-left: 0;
+}
+.company-name {
+  display: flex;
+  gap: 17px;
+  align-items: flex-start;
+  margin-bottom: 28px;
+}
+.client-brand {
+  display: none;
+}
+.record-number {
+  font-size: 12px !important;
+  color: #6481a7 !important;
+  line-height: 1.6;
+  padding-top: 10px;
+  flex-shrink: 0;
+}
+.client-identity {
+  min-width: 0;
+}
+.company-name h2 {
+  color: #edf3fb;
+  font-size: clamp(24px, 2.3vw, 34px);
+  font-weight: 600;
+  line-height: 1.4;
+  letter-spacing: -1.1px;
+}
+.client-region {
+  display: block;
+  font-size: 12px;
+  color: #708aa9;
+  margin-top: 8px;
+}
+.company-projects ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.company-projects li {
+  margin: 0;
+  padding: 11px 0 11px 18px;
+  border-bottom: 1px solid #ffffff08;
+  color: #aebed4;
+  font-size: 15px;
+  line-height: 1.8;
+  position: relative;
+  letter-spacing: -0.2px;
+}
+.company-projects li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 24px;
+  width: 5px;
+  height: 1px;
+  background: #547298;
+}
+.company-projects li:last-child {
+  border-bottom: 0;
+}
+.record-card-footer {
+  margin-top: 25px;
+  color: #617e9f;
+  letter-spacing: 1.5px;
+  font-size: 10px;
+}
+.search-empty {
+  padding: 70px 0;
+  color: #9bafc9;
+}
+.company-record[hidden] {
+  display: none;
+}
+/* 실제 연도별 건수를 이용한 탐색 그래프와 세로 타임라인. */
+.history-chart {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: clamp(7px, 1.4vw, 23px);
+  align-items: flex-end;
+  margin-top: 48px;
+  padding: 18px 0 0;
+  max-width: 800px;
+}
+.chart-year {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  min-width: 0;
+  flex: 1;
+  color: #7084a1;
+  font-size: 11px;
+}
+.chart-year i {
+  display: block;
+  height: var(--bar-height);
+  width: 100%;
+  max-width: 26px;
+  background: linear-gradient(#9ebfe9, #294361);
+  border-radius: 3px 3px 0 0;
+  transition:
+    background 0.25s,
+    transform 0.25s;
+  transform-origin: bottom;
+}
+.chart-year .chart-value {
+  font-size: 10px;
+  color: #91a8c9;
+  opacity: 0;
+  transition: opacity 0.2s;
+}
+.chart-year:hover i {
+  background: linear-gradient(#dfecff, #83aee9);
+  transform: scaleY(1.06);
+}
+.chart-year:hover .chart-value {
+  opacity: 1;
+}
+.chart-year:hover {
+  color: #edf5ff;
+}
+.timeline-layout {
+  background: #eaeff5;
+  padding-top: 65px;
+  gap: 8%;
+  grid-template-columns: 200px 1fr;
+}
+.timeline-rail {
+  gap: 3px;
+}
+.archive-caption {
+  border-bottom: 1px solid #bdcadb;
+  padding-bottom: 23px;
+  margin-bottom: 22px;
+}
+.archive-caption > span {
+  font-size: 12px;
+  color: #456489;
+  letter-spacing: 2px;
+}
+.archive-caption p {
+  font-size: 15px;
+  color: #71849f;
+  margin: 15px 0 0;
+  line-height: 1.9;
+}
+.timeline-rail > span {
+  font-size: 10px;
+  letter-spacing: 1.7px;
+  margin-bottom: 14px;
+}
+.timeline-rail a {
+  color: #8a9bb2;
+  font-weight: 550;
+  font-size: 17px;
+  letter-spacing: -0.5px;
+}
+.timeline-rail a.active {
+  color: #173e70;
+  border-color: #1f558f;
+  background: linear-gradient(90deg, #d2e0f1, transparent);
+  border-radius: 0 4px 4px 0;
+}
+.timeline-year {
+  position: relative;
+  padding-left: 30px;
+  padding-bottom: 65px;
+  border-left: 1px solid #b9cadf;
+}
+.year-heading {
+  position: relative;
+  align-items: flex-end;
+  border-bottom: 0;
+  padding-bottom: 30px;
+}
+.timeline-node {
+  position: absolute;
+  left: -37px;
+  top: 30px;
+  height: 13px;
+  width: 13px;
+  border: 3px solid #eaeff5;
+  outline: 1px solid #6c8aac;
+  background: #5a7a9f;
+  border-radius: 50%;
+}
+.year-heading h2 {
+  font-size: clamp(60px, 6vw, 88px);
+  font-weight: 600;
+  letter-spacing: -4px;
+  line-height: 1;
+  color: #203e65;
+}
+.year-heading > span:last-child {
+  font-size: 10px;
+  letter-spacing: 1.8px;
+  color: #7f92ac;
+  padding-bottom: 7px;
+}
+.project-list {
+  background: #f9fbfe;
+  border: 1px solid #d5dfec;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 12px 35px #26456905;
+}
+.project-list article {
+  padding: 22px 24px;
+  gap: 18px;
+  border-color: #e2e8f1;
+  grid-template-columns: 24px 1fr;
+  align-items: baseline;
+}
+.project-list article:last-child {
+  border-bottom: 0;
+}
+.project-list article > span:first-child {
+  font-size: 11px;
+  color: #97a8bf;
+}
+.project-list .project-mark {
+  display: none;
+}
+.project-list p {
+  font-size: 16px;
+  font-weight: 500;
+  color: #405b7d;
+  line-height: 1.8;
+  letter-spacing: -0.3px;
+}
+.project-list article:hover {
+  background: #eef4fc;
+}
+.timeline-year:target .timeline-node {
+  background: #225a9c;
+  outline-color: #225a9c;
+  box-shadow: 0 0 0 5px #b7cce6;
+}
+/* 기존 흰 이미지의 색을 보존하면서 가장자리, 깊이, 배경을 하나로 맞춥니다. */
+.cx-content #cx-hero {
+  background:
+    radial-gradient(ellipse at 85% 25%, #192b47, transparent 65%), #080c12;
+}
+.cx-hero-frame {
+  padding: 28px !important;
+  border: 1px solid #fff;
+  border-radius: 22px;
+  background: linear-gradient(145deg, #fff, #edf1f7);
+  box-shadow:
+    0 25px 80px #0006,
+    0 0 0 8px #9bbde90b;
+  transform: perspective(1300px) rotateY(-5deg);
+  transition: transform 0.6s;
+}
+.cx-hero-frame:hover {
+  transform: perspective(1300px) rotateY(0);
+}
+.cx-hero-frame img {
+  display: block;
+  width: 100%;
+  border-radius: 10px;
+}
+.hero-brand {
+  margin-top: 45px;
+}
+.hero-brand img {
+  background: #fff;
+  padding: 13px 20px;
+  border-radius: 7px;
+  max-width: 265px;
+  margin: 0;
+}
+.cx-content #cx-products {
+  background: #101925;
+}
+.product-card {
+  padding: 60px 0;
+  column-gap: 7%;
+  align-items: center;
+}
+.product-card:nth-child(even) {
+  grid-template-columns: 1.1fr 1fr;
+}
+.product-card:nth-child(even) .card-header,
+.product-card:nth-child(even) > .card-text {
+  grid-column: 2;
+}
+.product-card:nth-child(even) .product-window {
+  grid-column: 1;
+}
+.product-window {
+  grid-column: 2;
+  grid-row: 1/3;
+  align-self: center;
+  min-width: 0;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #dae2ef;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 22px 65px #0004;
+  transform: translateY(0);
+  transition:
+    transform 0.35s,
+    box-shadow 0.35s;
+}
+.product-window:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 28px 75px #0005;
+}
+.window-chrome {
+  height: 36px;
+  background: linear-gradient(#fafbfe, #edf1f6);
+  border-bottom: 1px solid #e2e7f0;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 0 13px;
+}
+.window-chrome > span {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: #c0cad9;
+}
+.window-chrome i {
+  font-size: 8px;
+  font-style: normal;
+  font-weight: 600;
+  letter-spacing: 1px;
+  color: #9aa9bd;
+  margin-left: 12px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.product-window .card-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  padding: 22px;
+  background: #fff;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  filter: none;
+}
+.product-card .card-header h3 {
+  font-weight: 600;
+}
+.product-card > .card-text {
+  align-self: start;
+}
+.cx-content #cx-features {
+  background: #edf2f8;
+}
+.testimonial-brand {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  min-height: 80px;
+  padding: 20px 25px;
+  border-radius: 12px 12px 0 0;
+  margin: -28px -28px 28px;
+}
+.testimonial-brand img {
+  max-width: 125px;
+  max-height: 43px;
+  background: none;
+  padding: 0;
+  object-fit: contain;
+}
+.testimonial-card {
+  padding: 28px;
+  background: #121e2e;
+  border: 1px solid #293b55;
+  border-radius: 13px;
+  overflow: hidden;
+}
+.testimonial-card .stats {
+  font-weight: 550;
+}
+.partner-logo {
+  background: white;
+  border: 1px solid #e7edf6;
+  padding: 20px 24px;
+  border-radius: 10px;
+}
+.logos-grid {
+  gap: 1px;
+  background: #e1e7ef;
+  border: 1px solid #e1e7ef;
+  border-radius: 12px;
+  overflow: hidden;
+}
+.logos-grid img {
+  height: 110px;
+  background: #fff;
+  padding: 28px 30px;
+}
+.features-grid {
+  column-gap: 65px;
+}
+.feature-item {
+  padding: 28px 0 16px;
+}
+.feature-item h3 {
+  font-weight: 600;
+}
+.feature-item p {
+  font-size: 16px;
+}
+/* 편집형 경쟁력 소개: 고정 제목, 큰 사진과 단계별 스토리. */
+.competency-section {
+  background: #0d1623;
+  color: #eff4fc;
+  display: grid;
+  grid-template-columns: 1fr 1.4fr;
+  gap: 10%;
+  padding: 100px 8%;
+}
+.capability-intro {
+  position: sticky;
+  top: 135px;
+  align-self: start;
+}
+.capability-intro h2 {
+  font-size: clamp(37px, 4vw, 60px);
+  font-weight: 600;
+  letter-spacing: -2px;
+  margin: 30px 0 20px;
+  line-height: 1.35;
+}
+.capability-intro .capability-subtitle {
+  color: #7f98b9;
+  font-size: 16px;
+}
+.capability-intro .overline {
+  color: #728faf;
+}
+.capability-index {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  margin-top: 45px;
+}
+.capability-index a {
+  border-top: 1px solid #2b3a4f;
+  padding: 18px 0;
+  color: #9eafc7;
+  display: grid;
+  grid-template-columns: 35px 1fr 20px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 550;
+}
+.capability-index a:last-child {
+  border-bottom: 1px solid #2b3a4f;
+}
+.capability-index a > span {
+  color: #5e7a9e;
+  font-size: 11px;
+}
+.capability-index i {
+  font-style: normal;
+  color: #6e91be;
+}
+.capability-index a:hover {
+  color: #e6f0ff;
+}
+.capability-story {
+  scroll-margin-top: 125px;
+  margin-bottom: 70px;
+}
+.capability-story:last-child {
+  margin-bottom: 0;
+}
+.capability-image {
+  height: 260px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 12px 12px 0 0;
+  background: #23354e;
+}
+.capability-image:after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(0deg, #0a1937aa, transparent 65%);
+}
+.capability-image img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: saturate(0.45) contrast(1.03);
+  transition: transform 1s;
+}
+.capability-story:hover .capability-image img {
+  transform: scale(1.04);
+}
+.capability-watermark {
+  position: absolute;
+  left: 25px;
+  bottom: -6px;
+  z-index: 1;
+  font-size: 110px;
+  font-weight: 650;
+  line-height: 1;
+  color: #ffffffc9;
+  letter-spacing: -7px;
+}
+.image-rule {
+  position: absolute;
+  left: 28px;
+  right: 28px;
+  bottom: 22px;
+  height: 1px;
+  background: #ffffff55;
+  z-index: 2;
+}
+.capability-copy {
+  padding: 32px 35px 38px;
+  background: #152236;
+  border: 1px solid #263a56;
+  border-top: 0;
+  border-radius: 0 0 12px 12px;
+}
+.capability-tag {
+  font-size: 10px;
+  letter-spacing: 2px;
+  color: #6383ad;
+}
+.capability-copy h3 {
+  font-size: clamp(26px, 2.5vw, 36px);
+  letter-spacing: -1px;
+  font-weight: 600;
+  margin: 18px 0;
+}
+.competency-section .capability-copy p {
+  color: #a4b8d3;
+  font-size: 16px;
+  line-height: 1.9;
+  margin: 14px 0 0;
+}
+.competency-section .capability-copy p:first-of-type {
+  color: #7e9fc9;
+  font-size: 13px;
+  letter-spacing: 0.5px;
+}
+@media (max-width: 1100px) {
+  .company-records {
+    column-gap: 40px;
+  }
+  .company-name h2 {
+    font-size: 27px;
+  }
+  .competency-section {
+    gap: 6%;
+  }
+  .capability-image {
+    height: 220px;
+  }
+  .capability-copy {
+    padding: 25px;
+  }
+  .timeline-layout {
+    grid-template-columns: 145px 1fr;
+    gap: 5%;
+  }
+  .archive-caption p {
+    font-size: 13px;
+  }
+  .record-filters {
+    gap: 22px;
+  }
+}
+@media (max-width: 800px) {
+  .record-metrics {
+    gap: 35px;
+    margin-top: 30px;
+  }
+  .record-metrics strong {
+    font-size: 37px;
+  }
+  .record-metrics p {
+    font-size: 12px;
+  }
+  .browser-bar {
+    align-items: stretch;
+    gap: 25px;
+  }
+  .record-filters {
+    gap: 30px;
+  }
+  .record-filters button:after {
+    bottom: -9px;
+  }
+  .browser-bar label {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  .browser-bar input {
+    min-width: 0;
+    width: auto;
+    flex: 1;
+  }
+  .company-records {
+    grid-template-columns: 1fr;
+  }
+  .company-record {
+    padding: 30px 0;
+  }
+  .company-name {
+    margin-bottom: 20px;
+  }
+  .company-name h2 {
+    font-size: 29px;
+  }
+  .company-projects li {
+    font-size: 15px;
+  }
+  .history-chart {
+    gap: 5px;
+    margin-top: 30px;
+    overflow: hidden;
+  }
+  .chart-year {
+    font-size: 9px;
+  }
+  .chart-year i {
+    max-width: 18px;
+  }
+  .chart-value {
+    display: none;
+  }
+  .timeline-layout {
+    display: block;
+    padding-top: 0;
+  }
+  .timeline-rail {
+    background: #eaeff5;
+    border-color: #bdcce0;
+  }
+  .archive-caption {
+    display: none;
+  }
+  .timeline-rail a.active {
+    background: transparent;
+    border-radius: 0;
+  }
+  .timeline-year {
+    padding-left: 20px;
+  }
+  .timeline-node {
+    left: -27px;
+    top: 21px;
+  }
+  .year-heading h2 {
+    font-size: 60px;
+  }
+  .project-list article {
+    padding: 18px 15px;
+    gap: 12px;
+    grid-template-columns: 19px 1fr;
+  }
+  .project-list p {
+    font-size: 15px;
+  }
+  .competency-section {
+    display: block;
+    padding: 65px 6%;
+  }
+  .capability-intro {
+    position: static;
+    margin-bottom: 40px;
+  }
+  .capability-intro h2 {
+    font-size: 42px;
+  }
+  .capability-index {
+    margin-top: 30px;
+  }
+  .capability-image {
+    height: 230px;
+  }
+  .capability-copy {
+    padding: 27px;
+  }
+  .capability-story {
+    margin-bottom: 40px;
+  }
+  .product-card,
+  .product-card:nth-child(even) {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 28px;
+    padding: 40px 0;
+  }
+  .product-card > .card-text {
+    margin-top: 0;
+  }
+  .product-window {
+    width: 100%;
+    transform: none;
+  }
+  .product-window .card-img {
+    padding: 14px;
+  }
+  .cx-hero-frame {
+    transform: none;
+    border-radius: 15px;
+    padding: 18px !important;
+  }
+  .logos-grid img {
+    height: 90px;
+    padding: 23px 20px;
+  }
+  .window-chrome {
+    height: 29px;
+  }
+  .testimonial-brand {
+    margin-bottom: 25px;
+  }
+  .partner-logo {
+    max-width: 245px;
+  }
+}
+@media (prefers-reduced-motion: reduce) {
+  .product-window,
+  .cx-hero-frame,
+  .capability-image img,
+  .chart-year i {
+    transition: none;
+  }
+}
+/* 채용과 문의도 같은 타이포그래피·명도·선의 규칙을 사용합니다. */
+.career-content {
+  padding: 0;
+  background: #0c1421;
+  color: #eaf2fd;
+}
+.career-opening,
+.career-application,
+.career-benefits,
+.career-end {
+  padding: 75px 8% !important;
+}
+.career-section-heading {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+  margin: 30px 0 45px;
+  align-items: start;
+}
+.career-section-heading h2 {
+  margin: 0;
+}
+.career-content .career-section-heading p {
+  color: #8fa7c7;
+  margin: 0;
+  max-width: 500px;
+}
+.role-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 28px;
+}
+.role-grid article {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a2b43, #101d30);
+  border: 1px solid #2a3f5d;
+  border-radius: 12px;
+  padding: 35px 38px;
+  min-height: 235px;
+}
+.role-grid article > span {
+  font-size: 11px;
+  color: #7194c3;
+  font-weight: 600;
+  letter-spacing: 1.4px;
+}
+.career-content .role-grid h3 {
+  font-size: clamp(28px, 2.6vw, 38px);
+  font-weight: 600;
+  line-height: 1.45;
+  color: #dceafd;
+  letter-spacing: -1.2px;
+  margin: 30px 0 0;
+  position: relative;
+  z-index: 1;
+}
+.role-mark {
+  position: absolute;
+  right: 20px;
+  bottom: -15px;
+  font-size: 100px;
+  font-weight: 450;
+  letter-spacing: -6px;
+  color: #ffffff07;
+  line-height: 1.1;
+}
+.career-application {
+  display: grid;
+  grid-template-columns: 1fr 1.35fr;
+  gap: 8%;
+  border-top: 1px solid #26364e;
+}
+.career-application h2 {
+  margin: 25px 0;
+}
+.application-details article {
+  display: grid;
+  grid-template-columns: 25px 1fr;
+  gap: 20px;
+  padding: 22px 0;
+  border-bottom: 1px solid #26364e;
+}
+.application-details article > span {
+  font-size: 11px;
+  color: #6484ae;
+  padding-top: 3px;
+}
+.career-content .application-details p {
+  margin: 0;
+  color: #a9bdd8;
+  line-height: 1.9;
+}
+.career-content a.apply-button {
+  display: inline-flex;
+  align-items: center;
+  gap: 35px;
+  background: #e7effb;
+  color: #182a44;
+  border: 0;
+  padding: 12px 22px;
+  border-radius: 30px;
+  font-size: 15px;
+  font-weight: 650;
+  margin-top: 28px;
+}
+.apply-button > span {
+  font-size: 20px;
+}
+.career-benefits {
+  background: #edf2f8;
+  color: #213e63;
+}
+.career-benefits > .overline {
+  color: #758aa5;
+}
+.career-content .career-benefits h2 {
+  margin: 25px 0 45px;
+}
+.career-content .career-benefits ul {
+  list-style: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 45px;
+  row-gap: 0;
+  margin: 0;
+}
+.career-content .career-benefits li {
+  border-top: 1px solid #cbd6e5;
+  padding: 22px 0;
+  color: #456182;
+  display: flex;
+  gap: 20px;
+  align-items: baseline;
+  font-weight: 500;
+}
+.career-benefits li > span {
+  color: #98aac2;
+  font-size: 11px;
+}
+.career-end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 40px;
+  border-top: 1px solid #2b3c55;
+}
+.career-end > div > span {
+  font-weight: 600;
+  color: #d4e3f8;
+  font-size: 20px;
+}
+.career-content .career-end p {
+  color: #809abf;
+  margin: 12px 0 0;
+}
+.career-content .career-end a {
+  white-space: nowrap;
+  color: #b0cbee;
+  font-size: 16px;
+}
+.contact-content {
+  background: #101a29;
+  color: #e5effe;
+  padding: 75px 8% 100px;
+}
+.contact-layout {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 9%;
+}
+.contact-invitation > span {
+  color: #6989b4;
+  letter-spacing: 2px;
+  font-size: 11px;
+  font-weight: 600;
+}
+.contact-invitation h2 {
+  font-size: clamp(30px, 3vw, 43px);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 30px 0;
+  color: #dfebfd;
+}
+.contact-content .contact-invitation p {
+  color: #8aa6cc;
+  max-width: 380px;
+}
+.contact-content .contact-invitation > .pill {
+  border: 1px solid #5f7fa7;
+  color: #c9def9;
+  padding: 11px 23px;
+  font-size: 15px;
+  border-radius: 30px;
+  margin-top: 15px;
+}
+.contact-methods {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.contact-methods article {
+  padding: 28px 0;
+  border-top: 1px solid #314563;
+}
+.contact-methods article:first-child {
+  padding-top: 0;
+  border-top: 0;
+}
+.contact-methods h3 {
+  font-size: 14px;
+  color: #6f91be;
+  font-weight: 600;
+  margin: 0 0 18px;
+}
+.contact-content .contact-methods a {
+  border: 0;
+  color: #dfebfc;
+  font-weight: 550;
+  letter-spacing: -0.5px;
+  font-size: clamp(23px, 2.4vw, 33px);
+  padding: 0;
+  line-height: 1.5;
+}
+.contact-content .contact-methods p {
+  font-size: 16px;
+  color: #9cb4d6;
+  margin: 12px 0;
+  line-height: 1.9;
+}
+.contact-content .contact-methods a[href*="map.naver"] {
+  font-size: 14px;
+  color: #abc7ed;
+  border-bottom: 1px solid #4e719e;
+  padding-bottom: 7px;
+  margin-top: 6px;
+}
+@media (max-width: 800px) {
+  .career-opening,
+  .career-application,
+  .career-benefits,
+  .career-end {
+    padding: 55px 6% !important;
+  }
+  .career-section-heading,
+  .role-grid,
+  .career-application {
+    grid-template-columns: 1fr;
+    gap: 28px;
+  }
+  .career-section-heading {
+    margin: 25px 0 30px;
+  }
+  .role-grid article {
+    padding: 28px;
+    min-height: 210px;
+  }
+  .career-content .career-benefits ul {
+    grid-template-columns: 1fr 1fr;
+    column-gap: 25px;
+  }
+  .career-content .career-benefits li {
+    gap: 12px;
+    padding: 18px 0;
+    font-size: 15px;
+  }
+  .career-end {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+  }
+  .contact-content {
+    padding: 55px 6% 70px;
+  }
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 55px;
+  }
+  .contact-content .contact-methods a {
+    font-size: 27px;
+  }
+  .career-application h2 {
+    margin-bottom: 0;
+  }
+}
+/* 파트너 문구와 로고의 실제 콘텐츠 중심을 맞춥니다. */
+.partner-inner {
+  display: flex;
+  align-items: center;
+}
+.partner-inner > h2 {
+  margin: 0;
+  line-height: 1.4;
+}
+.partner-inner > .partner-logo {
+  display: block;
+  align-self: center;
+  flex-shrink: 0;
+  margin: 0;
+}
+.hero-brand {
+  display: flex;
+  align-items: center;
+}
+.hero-brand > img {
+  display: block;
+  margin: 0;
+}
+.partner-logo {
+  box-sizing: border-box;
+}
+
+/* 큰 영상 영역: 화면 진입 시 재생하며 네이티브 컨트롤을 유지합니다. */
+.cx-content #cx-video {
+  padding: 70px 5% 80px;
+  background:
+    radial-gradient(ellipse at 50% 100%, #1c2c45, transparent 65%), #080e17;
+  border-top: 1px solid #26374e;
+  border-bottom: 1px solid #26374e;
+}
+.video-section-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+  margin: 0 auto 35px;
+  max-width: 1500px;
+}
+.video-section-heading h2 {
+  font-size: clamp(28px, 2.8vw, 42px);
+  font-weight: 600;
+  line-height: 1.4;
+  margin: 20px 0 0;
+}
+.video-section-heading > p {
+  font-size: 13px;
+  color: #7f9bc1;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 0;
+}
+.video-status-dot {
+  width: 6px;
+  height: 6px;
+  display: inline-block;
+  border-radius: 50%;
+  background: #8aaddd;
+}
+.video-stage {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+  border: 1px solid #3d5475;
+  border-radius: 16px;
+  overflow: hidden;
+  background: #03060b;
+  box-shadow: 0 35px 100px #0007;
+  position: relative;
+  aspect-ratio: 16/9;
+}
+.cx-content #cx-video video {
+  width: 100%;
+  height: 100%;
+  max-height: none;
+  display: block;
+  object-fit: contain;
+  background: #03060b;
+}
+.video-caption {
+  max-width: 1500px;
+  margin: 22px auto 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 25px;
+  font-size: 11px;
+  line-height: 1.8;
+  color: #627e9f;
+}
+.video-caption > span:first-child {
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.video-stage[data-playing="true"] {
+  border-color: #6b91c2;
+}
+@media (max-width: 800px) {
+  .cx-content #cx-video {
+    padding: 45px 5% 55px;
+  }
+  .video-section-heading {
+    display: block;
+    margin-bottom: 25px;
+  }
+  .video-section-heading h2 {
+    font-size: 29px;
+  }
+  .video-section-heading > p {
+    margin-top: 20px;
+    font-size: 12px;
+  }
+  .video-stage {
+    border-radius: 10px;
+  }
+  .video-caption {
+    display: block;
+    font-size: 11px;
+  }
+  .video-caption > span {
+    display: block;
+    margin-top: 10px;
+  }
+}
+/* 영상 자체가 주인공이 되도록 소개 제목의 비율을 제한합니다. */
+.cx-content .video-section-heading h2{font-size:clamp(28px,2.8vw,40px);line-height:1.35;font-weight:600;margin:18px 0 0}html[lang=en] .logo-region .region-ko{display:none}html[lang=en] .logo-region .region-en{font-size:17px;font-weight:600;letter-spacing:.6px;color:#294361}

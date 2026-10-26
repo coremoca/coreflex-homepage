@@ -107,7 +107,7 @@ Node.js가 설치된 PC에서 `start-local.cmd`를 실행하거나 `npm run dev`
 `scripts/build.mjs`는 페이지 생성, `dev.mjs`는 로컬 서버, `check.mjs`는 연결 확인용입니다.
 Medallia 상담은 기존 Google 신청서, 채용은 `admin@crflx.com` 메일 앱 연결입니다.
 기존 `business.html`, `history.html`, `cx.html` 주소도 새 이름으로 연결됩니다.
-`CNAME`은 `new.crflx.com` 도메인 설정입니다. main 브랜치에 푸시하면 GitHub Actions가 빌드·검사 후 사이트를 배포합니다.
+`CNAME`은 `www.crflx.com` 도메인 설정입니다. main 브랜치에 푸시하면 GitHub Actions가 빌드·검사 후 사이트를 배포합니다.
 
 ## 한국어·영어 페이지
 
@@ -118,6 +118,7 @@ Medallia 상담은 기존 Google 신청서, 채용은 `admin@crflx.com` 메일 �
 - 실적은 같은 JSON의 `ko`, `en`을 함께 작성합니다. 고객사 영문 이름은 `nameEn`입니다. 두 언어의 건수·순서가 자동으로 일치합니다.
 - 이미지에 포함된 공식 로고는 원본을 유지하며, 설명과 대체 텍스트는 언어별로 표시합니다.
 
-공개 주소는 https://new.crflx.com/ 입니다. `dist`는 내부 빌드 결과 폴더이며 URL에 붙이지 않습니다. GitHub Pages는 Actions가 올린 `dist` 내부 파일을 도메인 루트에서 서비스합니다.
+공개 주소는 https://www.crflx.com/ 입니다. `dist`는 내부 빌드 결과 폴더이며 URL에 붙이지 않습니다. GitHub Pages는 Actions가 올린 `dist` 내부 파일을 도메인 루트에서 서비스합니다.
+
 
 

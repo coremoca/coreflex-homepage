@@ -11,6 +11,7 @@ const types = {
   ".css": "text/css; charset=utf-8",
   ".js": "text/javascript; charset=utf-8",
   ".svg": "image/svg+xml",
+  ".mp4": "video/mp4",
   ".png": "image/png",
   ".jpg": "image/jpeg",
   ".jpeg": "image/jpeg",
@@ -47,7 +48,7 @@ const server = http.createServer(async (req, res) => {
     file = path.resolve(
       output,
       "." +
-        decodeURIComponent(url.pathname === "/" ? "/index.html" : url.pathname),
+        decodeURIComponent(url.pathname.endsWith("/") ? url.pathname + "index.html" : url.pathname),
     );
   } catch {
     res.writeHead(400);

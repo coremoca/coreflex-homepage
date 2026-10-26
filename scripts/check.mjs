@@ -21,14 +21,16 @@ for (const file of await htmlFiles(output)) {
     const value = match[1];
     if (/^(https?:|mailto:|tel:|data:|\/\/)/.test(value)) continue;
     const [url, anchor] = value.split("#");
-    const target = url
+    let target = url
       ? path.resolve(path.dirname(file), decodeURIComponent(url.split("?")[0]))
       : file;
-    if (!target.startsWith(output + path.sep)) {
+    if (target !== output && !target.startsWith(output + path.sep)) {
       errors.push(`${label}: 경로 오류 ${value}`);
       continue;
     }
     try {
+      const stat = await fs.stat(target);
+      if (stat.isDirectory()) target = path.join(target, "index.html");
       await fs.access(target);
     } catch {
       errors.push(`${label}: 파일 없음 ${value}`);

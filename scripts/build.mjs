@@ -10,6 +10,7 @@ export const root = path.resolve(
   "..",
 );
 export const output = path.join(root, "dist");
+import { seoHead, sitemap, robots, canonicalUrl } from "./seo.mjs";
 const source = path.join(root, "src");
 const read = (name) => fs.readFile(path.join(source, name), "utf8");
 const escape = (value) =>
@@ -210,7 +211,7 @@ export async function buildSite() {
         /(src|poster)="assets\//g,
         `$1="${prefix}assets/`,
       );
-      const html = `<!doctype html>\n<html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="description" content="${lang === "en" ? "Coreflex financial technology, customer experience solutions, project records and careers." : "코어플렉스 금융솔루션과 고객경험솔루션, 국내외 실적 및 채용 안내"}"><meta name="theme-color" content="#080d15"><title>${escape(title)} | COREFLEX</title><link rel="alternate" hreflang="ko" href="${lang === "en" ? "../" : ""}${filename}"><link rel="alternate" hreflang="en" href="${lang === "en" ? "" : "en/"}${filename}"><link rel="icon" href="${prefix}assets/brand/favicon.svg" type="image/svg+xml"><link rel="preload" href="${prefix}assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>${["layout", "pages", "theme"].map((n) => `<link rel="stylesheet" href="${prefix}styles/${n}.css">`).join("")}</head><body data-page="${filename}"><a class="skip" href="#main">${lang === "en" ? "Skip to content" : "본문으로 이동"}</a>\n${content}\n${scripts.map((n) => `<script type="module" src="${prefix}scripts/${n}"></script>`).join("\n")}\n</body></html>`;
+      const html = `<!doctype html>\n<html lang="${lang}"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#080d15">${seoHead(filename, lang, title)}<link rel="icon" href="${prefix}assets/brand/favicon.svg" type="image/svg+xml"><link rel="preload" href="${prefix}assets/fonts/PretendardVariable.woff2" as="font" type="font/woff2" crossorigin>${["layout", "pages", "theme"].map((n) => `<link rel="stylesheet" href="${prefix}styles/${n}.css">`).join("")}</head><body data-page="${filename}"><a class="skip" href="#main">${lang === "en" ? "Skip to content" : "본문으로 이동"}</a>\n${content}\n${scripts.map((n) => `<script type="module" src="${prefix}scripts/${n}"></script>`).join("\n")}\n</body></html>`;
       documents.push([(lang === "en" ? "en/" : "") + filename, html]);
     }
   }
@@ -230,8 +231,10 @@ export async function buildSite() {
   for (const [oldName, newName] of Object.entries(legacyRoutes))
     await fs.writeFile(
       path.join(output, oldName),
-      `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>페이지 이동</title><meta http-equiv="refresh" content="0;url=${newName}"><script>location.replace(${JSON.stringify(newName)}+location.search+location.hash)</script></head><body><a href="${newName}">새 페이지로 이동</a></body></html>`,
+      `<!doctype html><html lang="ko"><head><meta charset="utf-8"><title>페이지 이동</title><link rel="canonical" href="${canonicalUrl(newName, "ko")}"><meta http-equiv="refresh" content="0;url=${newName}"><script>location.replace(${JSON.stringify(newName)}+location.search+location.hash)</script></head><body><a href="${newName}">새 페이지로 이동</a></body></html>`,
     );
+  await fs.writeFile(path.join(output, "sitemap.xml"), sitemap(files));
+  await fs.writeFile(path.join(output, "robots.txt"), robots);
   await fs.writeFile(path.join(output, ".nojekyll"), "");
   try {
     await fs.copyFile(path.join(root, "CNAME"), path.join(output, "CNAME"));

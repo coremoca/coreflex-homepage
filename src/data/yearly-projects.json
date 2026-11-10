@@ -5,16 +5,16 @@
       "year": 2026,
       "projects": [
         {
+          "ko": "넥스트증권 해외주식원장 및 FIX Gateway 구축",
+          "en": "Next Securities: overseas equity ledger and FIX gateway"
+        },
+        {
           "ko": "유진투자증권 리테일 대여풀 주식대여 서비스 구축",
           "en": "Eugene Investment & Securities: retail pool securities lending service"
         },
         {
           "ko": "현대차증권 차세대시스템 - 국내/해외주식 매매, 결제, 통합증거금",
           "en": "Hyundai Motor Securities: next-generation domestic and overseas equities trading, settlement and integrated margin"
-        },
-        {
-          "ko": "넥스트증권 해외주식원장 및 FIX Gateway 구축",
-          "en": "Next Securities: overseas equity ledger and FIX gateway"
         },
         {
           "ko": "DB증권 해외주식시스템 고도화",
@@ -34,12 +34,12 @@
       "year": 2025,
       "projects": [
         {
-          "ko": "유진투자증권 해외주식 담보대출 서비스 구축",
-          "en": "Eugene Investment & Securities: overseas equity-backed lending service"
-        },
-        {
           "ko": "한국증권금융 해외주식의 대기관여신 담보취급 개발",
           "en": "Korea Securities Finance: overseas equity collateral processing for institutional lending"
+        },
+        {
+          "ko": "유진투자증권 해외주식 담보대출 서비스 구축",
+          "en": "Eugene Investment & Securities: overseas equity-backed lending service"
         },
         {
           "ko": "메리츠증권 해외주식 상주개발",
@@ -105,12 +105,12 @@
       "year": 2022,
       "projects": [
         {
-          "ko": "메리츠증권 해외주식 CFD시스템 구축",
-          "en": "Meritz Securities: overseas equity CFD system"
-        },
-        {
           "ko": "신한금융투자 해외주식 CFD시스템 구축",
           "en": "Shinhan Investment: overseas equity CFD system"
+        },
+        {
+          "ko": "메리츠증권 해외주식 CFD시스템 구축",
+          "en": "Meritz Securities: overseas equity CFD system"
         },
         {
           "ko": "한화투자증권 해외주식 소수점매매 구축",
@@ -201,12 +201,12 @@
       "year": 2018,
       "projects": [
         {
-          "ko": "메리츠증권 해외주식시스템 구축",
-          "en": "Meritz Securities: overseas equities system"
-        },
-        {
           "ko": "한화투자증권 해외주식시스템 구축",
           "en": "Hanwha Investment & Securities: overseas equities system"
+        },
+        {
+          "ko": "메리츠증권 해외주식시스템 구축",
+          "en": "Meritz Securities: overseas equities system"
         },
         {
           "ko": "미래대우 차세대 해외파생시스템, 채권시스템 구축",

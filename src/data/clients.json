@@ -122,7 +122,7 @@
       "nameEn": "Korbit"
     },
     {
-      "name": "koscom",
+      "name": "코스콤",
       "region": "domestic",
       "image": "assets/images/clients/koscom.jpg",
       "width": 503,
@@ -162,7 +162,7 @@
       "nameEn": "Korea Securities Finance"
     },
     {
-      "name": "한화증권",
+      "name": "한화투자증권",
       "region": "domestic",
       "image": "assets/images/clients/hanwha.jpg",
       "width": 800,
@@ -178,7 +178,7 @@
       "nameEn": "Hyundai Motor Securities"
     },
     {
-      "name": "NTT Data",
+      "name": "NTT DATA",
       "region": "global",
       "image": "assets/images/clients/ntt-data.png",
       "width": 378,
@@ -215,7 +215,7 @@
       "image": "assets/images/clients/japan-exchange.jpg",
       "width": 225,
       "height": 355,
-      "nameEn": "Japan Exchange"
+      "nameEn": "Osaka Exchange (JPX)"
     },
     {
       "name": "우즈벡 국유자산위원회 (SCC)",

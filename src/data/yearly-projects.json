@@ -163,7 +163,7 @@
       "year": 2020,
       "projects": [
         {
-          "ko": "베트남 Pinetree 증권 원장 시스템 구축",
+          "ko": "베트남 Pinetree증권 원장시스템 구축",
           "en": "Pinetree Securities, Vietnam: securities ledger system"
         },
         {
@@ -177,6 +177,10 @@
         {
           "ko": "한화투자증권 외화원장시스템 구축",
           "en": "Hanwha Investment & Securities: foreign-currency ledger system"
+        },
+        {
+          "ko": "토스증권 해외주식 참조모델 공급",
+          "en": "Toss Securities: overseas equities reference model"
         }
       ]
     },
@@ -194,6 +198,10 @@
         {
           "ko": "참비트 암호화폐거래소 시스템 구축",
           "en": "Charmbit: cryptocurrency exchange system"
+        },
+        {
+          "ko": "SK증권 기관 외화RP시스템 구축",
+          "en": "SK Securities: institutional foreign-currency repo system"
         }
       ]
     },
@@ -209,7 +217,7 @@
           "en": "Meritz Securities: overseas equities system"
         },
         {
-          "ko": "미래대우 차세대 해외파생시스템, 채권시스템 구축",
+          "ko": "미래에셋대우 차세대 해외파생시스템, 채권시스템 구축",
           "en": "Mirae Asset Daewoo: next-generation overseas derivatives and bond systems"
         },
         {
@@ -222,8 +230,8 @@
       "year": 2017,
       "projects": [
         {
-          "ko": "삼성 SAAT 리테일시스템 구축",
-          "en": "Samsung: SAAT retail system"
+          "ko": "삼성증권 SAAT 리테일시스템 구축",
+          "en": "Samsung Securities: SAAT retail system"
         },
         {
           "ko": "코스콤 자본시장 공동 오픈 API FIX 게이트웨이 구축",
@@ -235,11 +243,19 @@
         },
         {
           "ko": "유진투자증권 해외채권시스템 구축",
-          "en": "Eugene Investment & Securities: foreign bond system"
+          "en": "Eugene Investment & Securities: foreign-currency bond system"
         },
         {
           "ko": "한국예탁결제원 전자증권제도 도입 컨설팅",
-          "en": "Korea Securities Depository: electronic securities adoption consulting"
+          "en": "Korea Securities Depository: consulting on the introduction of the electronic securities system"
+        },
+        {
+          "ko": "미래에셋대우 해외선물옵션 매매시스템 고도화 및 주문원장 개발",
+          "en": "Mirae Asset Daewoo: overseas futures and options trading enhancement and order ledger development"
+        },
+        {
+          "ko": "한국가상화폐거래소 암호화폐통합거래소 구축",
+          "en": "Korea Cryptocurrency Exchange: integrated cryptocurrency exchange"
         }
       ]
     },
@@ -265,6 +281,18 @@
         {
           "ko": "SK증권 해외주식시스템 구축",
           "en": "SK Securities: overseas equities system"
+        },
+        {
+          "ko": "신한금융투자 종합수익관리 시스템 구축",
+          "en": "Shinhan Investment: comprehensive profitability management system"
+        },
+        {
+          "ko": "메리츠종금증권 신연금저축시스템 구축",
+          "en": "Meritz Merchant Securities: new pension savings system"
+        },
+        {
+          "ko": "삼성증권 메인프레임 다운사이징",
+          "en": "Samsung Securities: mainframe downsizing"
         }
       ]
     },
@@ -272,12 +300,12 @@
       "year": 2015,
       "projects": [
         {
-          "ko": "KB투자증권 해외주식 시스템 구축",
+          "ko": "KB투자증권 해외주식시스템 구축",
           "en": "KB Investment & Securities: overseas equities system"
         },
         {
-          "ko": "삼성 SAAT 시스템 구축",
-          "en": "Samsung: SAAT system"
+          "ko": "삼성증권 SAAT 시스템 구축",
+          "en": "Samsung Securities: SAAT system"
         },
         {
           "ko": "대우증권 해외선물 고도화",
@@ -303,6 +331,10 @@
         {
           "ko": "하나대투증권 차세대 PI",
           "en": "Hana Daetoo Securities: next-generation process innovation"
+        },
+        {
+          "ko": "신한금융투자 대행승인시스템 구축",
+          "en": "Shinhan Investment: delegated approval system"
         }
       ]
     },
@@ -310,8 +342,8 @@
       "year": 2013,
       "projects": [
         {
-          "ko": "INNO-BIZ 기술혁신 중소기업 인증",
-          "en": "Certified as an INNO-BIZ technology-innovative SME"
+          "ko": "이노비즈(Inno-Biz) 기술혁신형 중소기업 인증",
+          "en": "Certified as an Inno-Biz technology-innovative SME"
         },
         {
           "ko": "대우증권 전자단기사채시스템 구축",
@@ -381,7 +413,7 @@
           "en": "Certified as a venture enterprise"
         },
         {
-          "ko": "한국산업기술진흥협회 기업부설 연구소 인증",
+          "ko": "한국산업기술진흥협회 기업부설연구소 인정",
           "en": "Corporate research institute recognized by the Korea Industrial Technology Association"
         },
         {
@@ -389,7 +421,7 @@
           "en": "Osaka Securities Exchange: J-GATE test tools"
         },
         {
-          "ko": "토쿄공업품거래소 회원시스템 프로토타이핑",
+          "ko": "도쿄공업품거래소 회원시스템 프로토타이핑",
           "en": "Tokyo Commodity Exchange: member system prototype"
         }
       ]
@@ -398,8 +430,12 @@
       "year": 2009,
       "projects": [
         {
-          "ko": "㈜ ICM에서 IT사업부문이 분리된 ㈜GNSk로부터 금융사업부문 양수 ㈜코어플렉스 설립",
-          "en": "Coreflex established through the acquisition of the financial business division from GNSk, which had been spun off from ICM's IT business"
+          "ko": "㈜ICM에서 IT사업부문이 분리된 ㈜GNSk로부터 금융사업부문을 양수하여 ㈜코어플렉스 설립",
+          "en": "Coreflex was established by acquiring the financial business division of GNSk, which had been spun off from ICM's IT business"
+        },
+        {
+          "ko": "SK증권 차세대시스템(계정계) 구축",
+          "en": "SK Securities: next-generation core ledger system"
         }
       ]
     }

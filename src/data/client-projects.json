@@ -6,8 +6,8 @@
       "region": "domestic",
       "projects": [
         {
-          "ko": "통합증거금 서비스 기술지원 (2025)",
-          "en": "Technical support for integrated margin services (2025)"
+          "ko": "통합증거금 서비스 설계 (2025)",
+          "en": "Integrated margin service design (2025)"
         },
         {
           "ko": "해외주식 소수점매매 구축 (2022)",
@@ -18,7 +18,7 @@
           "en": "Foreign-currency ledger system (2021)"
         },
         {
-          "ko": "기관 외화REPO시스템 (2019)",
+          "ko": "기관 외화RP시스템 (2019)",
           "en": "Institutional foreign-currency repo system (2019)"
         },
         {
@@ -30,12 +30,12 @@
           "en": "Overseas equities system (2016)"
         },
         {
-          "ko": "외화채권시스템 구축",
-          "en": "Foreign-currency bond system"
+          "ko": "외화채권시스템 구축 (2014)",
+          "en": "Foreign-currency bond system (2014)"
         },
         {
           "ko": "차세대시스템(계정계) 구축 (2009)",
-          "en": "Next-generation core accounting system (2009)"
+          "en": "Next-generation core ledger system (2009)"
         }
       ],
       "nameEn": "SK Securities"
@@ -45,8 +45,8 @@
       "region": "domestic",
       "projects": [
         {
-          "ko": "차세대시스템 구축 - 국내주식/해외주식 매매 (2026)",
-          "en": "Next-generation domestic and overseas equity trading system (2026)"
+          "ko": "차세대시스템 구축 - 국내/해외주식 매매, 결제, 통합증거금 (2026)",
+          "en": "Next-generation domestic and overseas equities trading, settlement and integrated margin (2026)"
         },
         {
           "ko": "외화원장시스템 구축 (2021)",
@@ -80,8 +80,8 @@
           "en": "Overseas equities system (2018)"
         },
         {
-          "ko": "고속주문시스템 구축 (2012)",
-          "en": "High-speed order system (2012)"
+          "ko": "고속주문시스템 구축 (2013)",
+          "en": "High-speed order system (2013)"
         }
       ],
       "nameEn": "Hanwha Investment & Securities"
@@ -132,8 +132,8 @@
           "en": "Overseas futures and options trading enhancement and order ledger development (2017)"
         },
         {
-          "ko": "차세대시스템(해외파생·채권) 구축",
-          "en": "Next-generation overseas derivatives and bond systems"
+          "ko": "차세대시스템(해외파생·채권) 구축 (2018)",
+          "en": "Next-generation overseas derivatives and bond systems (2018)"
         }
       ],
       "nameEn": "Mirae Asset Securities"
@@ -147,7 +147,7 @@
           "en": "Retail pool securities lending service (2026)"
         },
         {
-          "ko": "해외주식 담보대출 서비스 개발 (2025)",
+          "ko": "해외주식 담보대출 서비스 구축 (2025)",
           "en": "Overseas equity-backed lending service (2025)"
         },
         {
@@ -164,7 +164,7 @@
         },
         {
           "ko": "해외채권상품운용&리테일판매시스템 (2017)",
-          "en": "Foreign bond product management and retail sales system (2017)"
+          "en": "Foreign-currency bond product management and retail sales system (2017)"
         }
       ],
       "nameEn": "Eugene Investment & Securities"
@@ -302,7 +302,7 @@
         },
         {
           "ko": "해외채권시스템 구축 (2012)",
-          "en": "Foreign bond system (2012)"
+          "en": "Foreign-currency bond system (2012)"
         }
       ],
       "nameEn": "Hana Securities"
@@ -346,7 +346,7 @@
       "region": "domestic",
       "projects": [
         {
-          "ko": "해외선물 VIP고객유치 특화기능 개발(2015)",
+          "ko": "해외선물 VIP고객유치 특화기능 개발 (2015)",
           "en": "Specialized features for overseas futures VIP clients (2015)"
         },
         {
@@ -358,8 +358,8 @@
           "en": "Small-value secured lending service system"
         },
         {
-          "ko": "외화 RP시스템 구축",
-          "en": "Foreign-currency repo system implementation"
+          "ko": "외화RP시스템 구축 (2011)",
+          "en": "Foreign-currency repo system (2011)"
         }
       ],
       "nameEn": "Daewoo Securities"
@@ -399,7 +399,7 @@
       "region": "domestic",
       "projects": [
         {
-          "ko": "합병후 시스템 통합 (2024)",
+          "ko": "합병 후 시스템 통합 (2024)",
           "en": "Post-merger system integration (2024)"
         }
       ],
@@ -425,25 +425,25 @@
       "region": "global",
       "projects": [
         {
-          "ko": "도쿄공업품거래소(TOCOM)회원시스템 프로토타이핑",
-          "en": "TOCOM member system prototype"
+          "ko": "도쿄공업품거래소(TOCOM) 회원시스템 프로토타이핑 (2010)",
+          "en": "TOCOM member system prototype (2010)"
         }
       ],
       "nameEn": "NTT DATA"
     },
     {
-      "name": "일본오사카증권거래소",
+      "name": "일본 오사카증권거래소",
       "region": "global",
       "projects": [
         {
-          "ko": "차기파생상품 매매시스템 시험툴",
-          "en": "Next-generation derivatives trading system test tools"
+          "ko": "차기파생상품 매매시스템(J-GATE) 시험툴 (2010)",
+          "en": "Next-generation derivatives trading system (J-GATE) test tools (2010)"
         }
       ],
       "nameEn": "Osaka Securities Exchange, Japan"
     },
     {
-      "name": "일본쥬빌리랩",
+      "name": "일본 쥬빌리랩",
       "region": "global",
       "projects": [
         {
@@ -458,7 +458,7 @@
       "nameEn": "Jubilee Lab, Japan"
     },
     {
-      "name": "일본오카상증권",
+      "name": "일본 오카산증권",
       "region": "global",
       "projects": [
         {
@@ -469,7 +469,7 @@
       "nameEn": "Okasan Securities, Japan"
     },
     {
-      "name": "일본유니콤",
+      "name": "일본 유니콤",
       "region": "global",
       "projects": [
         {
@@ -480,7 +480,7 @@
       "nameEn": "Unicom, Japan"
     },
     {
-      "name": "일본CSK SS",
+      "name": "일본 CSK SS",
       "region": "global",
       "projects": [
         {
@@ -502,7 +502,7 @@
       "nameEn": "Espion"
     },
     {
-      "name": "일본트레이더불",
+      "name": "일본 트레이더불",
       "region": "global",
       "projects": [
         {
@@ -513,7 +513,7 @@
       "nameEn": "Traderbull, Japan"
     },
     {
-      "name": "일본이츠카병원",
+      "name": "일본 이츠카병원",
       "region": "global",
       "projects": [
         {
@@ -524,7 +524,7 @@
       "nameEn": "Itsuka Hospital, Japan"
     },
     {
-      "name": "일본센추리 증권",
+      "name": "일본 센추리증권",
       "region": "global",
       "projects": [
         {
@@ -535,12 +535,12 @@
       "nameEn": "Century Securities, Japan"
     },
     {
-      "name": "베트남Pinetree증권",
+      "name": "베트남 Pinetree증권",
       "region": "global",
       "projects": [
         {
-          "ko": "베트남증권 원장시스템 구축",
-          "en": "Vietnam securities ledger system"
+          "ko": "베트남증권 원장시스템 구축 (2020)",
+          "en": "Vietnam securities ledger system (2020)"
         }
       ],
       "nameEn": "Pinetree Securities, Vietnam"
@@ -550,8 +550,8 @@
       "region": "global",
       "projects": [
         {
-          "ko": "증권사원장관리시스템 개발",
-          "en": "Securities firm ledger management system development"
+          "ko": "증권사원장관리시스템 개발 (2016)",
+          "en": "Securities firm ledger management system development (2016)"
         }
       ],
       "nameEn": "State Assets Authority, Uzbekistan"
@@ -561,8 +561,8 @@
       "region": "global",
       "projects": [
         {
-          "ko": "증권사원장관리 시스템",
-          "en": "Securities firm ledger management system"
+          "ko": "증권사원장관리 시스템 (2012)",
+          "en": "Securities firm ledger management system (2012)"
         }
       ],
       "nameEn": "Cambodia Securities Exchange"
@@ -572,8 +572,8 @@
       "region": "global",
       "projects": [
         {
-          "ko": "증권사원장관리 시스템",
-          "en": "Securities firm ledger management system"
+          "ko": "증권사원장관리 시스템 (2011)",
+          "en": "Securities firm ledger management system (2011)"
         }
       ],
       "nameEn": "Lao Securities Exchange"
@@ -583,8 +583,8 @@
       "region": "global",
       "projects": [
         {
-          "ko": "증권사원장관리시스템 개발",
-          "en": "Securities firm ledger management system development"
+          "ko": "증권사원장관리시스템 개발 (2016)",
+          "en": "Securities firm ledger management system development (2016)"
         }
       ],
       "nameEn": "Securities Regulator, Azerbaijan"

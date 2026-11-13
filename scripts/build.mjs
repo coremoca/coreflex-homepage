@@ -74,7 +74,7 @@ function clientRecords(items, lang) {
   return items
     .map(
       (c, i) =>
-        `<article class="company-record" data-company="${name(c, lang)}" data-region="${c.region}"><div class="company-name"><span class="record-number">${number(i + 1)}</span><div class="client-identity"><h2>${name(c, lang)}</h2><span class="client-region">${lang === "en" ? (c.region === "domestic" ? "Korean client" : "Global client") : c.region === "domestic" ? "국내 금융 · 기관" : "해외 고객사"}</span></div></div><div class="company-projects"><ul>${c.projects.map((p) => `<li>${text(p, lang)}</li>`).join("\n")}</ul></div><div class="record-card-footer">${number(c.projects.length)} PROJECT RECORDS</div></article>`,
+        `<article class="company-record" data-company="${name(c, lang)}" data-region="${c.region}"><div class="company-name"><span class="record-number">${number(i + 1)}</span><div class="client-identity"><h2>${name(c, lang)}</h2><span class="client-region">${lang === "en" ? (c.region === "domestic" ? "Korean client" : "Global client") : c.region === "domestic" ? "국내 금융 · 기관" : "해외 고객사"}</span></div></div><div class="company-projects"><ul>${c.projects.map((p) => `<li>${text(p, lang)}</li>`).join("\n")}</ul></div><div class="record-card-footer">${c.projects.length} PROJECT ${c.projects.length === 1 ? "RECORD" : "RECORDS"}</div></article>`,
     )
     .join("\n");
 }
@@ -82,7 +82,7 @@ function yearRecords(items, lang) {
   return items
     .map(
       (y) =>
-        `<section class="timeline-year" id="year-${y.year}"><div class="year-heading"><span class="timeline-node" aria-hidden="true"></span><h2>${y.year}</h2><span>${number(y.projects.length)} RECORDS</span></div><div class="project-list">${y.projects.map((p, i) => `<article><span>${number(i + 1)}</span><p>${text(p, lang)}</p></article>`).join("\n")}</div></section>`,
+        `<section class="timeline-year" id="year-${y.year}"><div class="year-heading"><span class="timeline-node" aria-hidden="true"></span><h2>${y.year}</h2><span>${y.projects.length} ${y.projects.length === 1 ? "RECORD" : "RECORDS"}</span></div><div class="project-list">${y.projects.map((p, i) => `<article><span>${number(i + 1)}</span><p>${text(p, lang)}</p></article>`).join("\n")}</div></section>`,
     )
     .join("\n");
 }
@@ -174,7 +174,7 @@ export async function buildSite() {
           .reverse()
           .map(
             (y) =>
-              `<a class="chart-year" href="#year-${y.year}" aria-label="${lang === "en" ? `${y.year}: ${y.projects.length} records` : `${y.year}년 실적 ${y.projects.length}건`}" style="--bar-height:${Math.min(180, 24 + y.projects.length * 7)}px"><span class="chart-value">${y.projects.length}</span><i></i><span>${String(y.year).slice(-2)}</span></a>`,
+              `<a class="chart-year" href="#year-${y.year}" aria-label="${lang === "en" ? `${y.year}: ${y.projects.length} ${y.projects.length === 1 ? "record" : "records"}` : `${y.year}년 실적 ${y.projects.length}건`}" style="--bar-height:${Math.min(180, 24 + y.projects.length * 7)}px"><span class="chart-value">${y.projects.length}</span><i></i><span>${String(y.year).slice(-2)}</span></a>`,
           )
           .join("") +
         "</div>",
